@@ -2,11 +2,10 @@ bases:
   - ../application
 patches:
   - replica_count.yaml
-  - resource_limits.yaml
 configMapGenerator:
 - name: example-config
   namespace: default
-  #behavior: replace
+  behavior: replace
   files:
     - configs/config.json
 patchesStrategicMerge:
