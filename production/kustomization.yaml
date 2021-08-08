@@ -1,6 +1,6 @@
 bases:
   - ../application
-patches:
+patchesStrategicMerge:
   - replica_count.yaml
 configMapGenerator:
 - name: example-config
