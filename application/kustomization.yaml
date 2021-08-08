@@ -6,4 +6,3 @@ resources:
   - deployment.yaml
   - configmap.yaml
   - namespace.yaml
-  - service.yaml
