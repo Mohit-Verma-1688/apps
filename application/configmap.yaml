@@ -2,7 +2,6 @@
  kind: ConfigMap
  metadata:
    name: example-config
-   namespace: default
  data:
    config.json: |
      {
