@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: configmap
+      chart: podinfo
       sourceRef:
         kind: HelmRepository
         name: helm-private
@@ -16,11 +16,6 @@ spec:
   interval: 30s
   releaseName: prod
   targetNamespace: default
-  values:
-    home: Production
-    infra:
-      region: us-produciton
-      zone: production-zone
-    name: PRODUCTION
-    projectCode: projectproduction
-
+  valuesFrom:
+    - kind: ConfigMap
+      name: podinfo-values

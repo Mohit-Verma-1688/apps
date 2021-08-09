@@ -1,6 +1,0 @@
-name: "PRODUCTION"
-home: "PRODUCTION"
-projectCode: PRODUCTION
-infra:
-  zone: P,R,O,D
-  region: PROD-P

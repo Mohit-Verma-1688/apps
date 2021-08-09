@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: configmap
+      chart: podinfo
       sourceRef:
         kind: HelmRepository
         name: helm-private
@@ -16,11 +16,6 @@ spec:
   interval: 30s
   releaseName: stage
   targetNamespace: default
-  values:
-    home: STAGING
-    infra:
-      region: us-stating
-      zone: stage-zone
-    name: staging
-    projectCode: stagingproject
-
+  valuesFrom:
+    - kind: ConfigMap
+      name: stage-values
