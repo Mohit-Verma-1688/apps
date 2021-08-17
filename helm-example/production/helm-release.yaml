@@ -18,4 +18,4 @@ spec:
   targetNamespace: default
   valuesFrom:
     - kind: ConfigMap
-      name: podinfo-values
+      name: prod-values

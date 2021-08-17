@@ -4,7 +4,7 @@ namespace: flux-system
 resources:
   - helm-release.yaml
 configMapGenerator:
-  - name: stage-values
+  - name: prod-values
     files:
       - values.yaml=production-values.yaml
 configurations:
