@@ -11,7 +11,7 @@ resources:
   - namespace.yaml
 configMapGenerator:
 - name: example-config
-  behavior: create
+  behavior: replace
   files:
     - configs/config.json
 patchesStrategicMerge:
