@@ -12,7 +12,7 @@ resources:
 configMapGenerator:
 - name: example-config
   namespace: myprod
-  behavior: replace
+  behavior: create
   files:
     - configs/config.json
 patchesStrategicMerge:
