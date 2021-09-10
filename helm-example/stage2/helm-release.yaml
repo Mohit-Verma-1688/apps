@@ -2,7 +2,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: stage
+  name: stage2
   namespace: flux-system
 spec:
   chart:
@@ -14,5 +14,5 @@ spec:
       version: 0.3.0
   install: {}
   interval: 30s
-  releaseName: stage
+  releaseName: stage2
   targetNamespace: default
